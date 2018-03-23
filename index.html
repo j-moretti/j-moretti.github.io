@@ -1,87 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Blue Truck Bakery</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Product Page Template</title>
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<style type="text/css">
-body,td,th {
-	font-size: 14px;
+<style>
+body {
+    background: #FFFFFF;
+}
+	div.a{
+		max-wid: 1200px;
+		margin: auto;
+		background: white;
+		padding: 0px;
+		text-align: center;
+	}
+		div.b{
+		max-wid: 600px;
+		margin: auto;
+		background: white;
+		padding: 0px;
+		text-align: center;
+	}
+		div.c{
+		max-wid: 300px;
+		margin: auto;
+		background: white;
+		padding: 10px;
+		text-align: center;
+    border-width: thin;
+    min-height: 50px
+	}
+	div.d{
+		width:auto
+		margin: auto;
+		background: white;
+		padding: 0px;
+		text-align: center;
+	}
+	table.a, td, th{
+    vertical-align: top;
+    text-align: center;
+    height: 35px;
+    padding: 0px;
+		background: white;
+		width:50%;
+    margin-left:25%;
+    margin-right:25%;
+	}
+  #wrapper {
+      width: 500px;
+      border: 1px solid black;
+      overflow: hidden; /* will contain if #first is longer than #second */
+  }
+  #first {
+      width: 300px;
+      float:left; /* add this */
+      border: 1px solid red;
+  }
+  #second {
+      border: 1px solid green;
+      overflow: hidden; /* if you don't want #second to wrap below #first */
+  }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+hr.style-one {
+    border: 0px;
+    height: 5px;
+    background: #33CCFF;
+    background-image: linear-gradient(to right, #33CCFF, #33CCFF, #33CCFF);
 }
 </style>
-
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="jumbotron">
-        <h1 class="text-center">A new kind of pop-up bakery</h1>
-		  
-<h3 class="text-center">Coming this April, Blue Truck Bakery opens Wednesdays in San Carlos</h3>
-		  <h3 class="text-center"></h3>
-        <div class="row"></div>
-        <p class="text-center">&nbsp;</p>
-        <span style="text-align: center"><img src="images/1200x400 cookie.jpg" alt="" class="img-responsive"> </span></div>
-    </div>
-  </div>
+<div class="a">
+	<img src="images/1200x200-logo.png" width="1200" height="200" alt="" class="img-responsive"/>
 </div>
-<div class="container">
-  <div class="row"></div>
+<hr class="style-one">
+<h1 style="text-align:center">A new kind of pop-up bakery</h1>
+<h4 style="text-align:center">Coming Wednesdays this April to San Carlos</h4>
+<hr class="style-one">
+<br>
+<!--  ################ Main Image (1200x400) ###################### -->
+<div class="a">
+	<img src="images/Main-1200x400.jpg" width="1200" height="400" alt="" class="img-responsive"/>
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="thumbnail"> <img src="images/CC_ball_600x300.png" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption"></div>
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="thumbnail"> <img src="images/CC_600x300.png" alt="Thumbnail Image 1" class="img-responsive">
-        <div class="caption"></div>
-      </div>
-    </div>
-  </div>
-</div>
-<a name="Bot">	
-<div class="container">
-  <div class="row"></div>
-</div>
-<hr>
-<div class="container">
-  <div class="row">
-<div class="col-lg-4 col-md-6 col-sm-6">
-  <h2>Follow Us!</h2>
-      <div class="row">
-      	<div class="col-xs-2"></div>
-      	<div class="col-xs-2"></div>
-      	<div class="col-xs-2"></div>
-      	<div class="col-xs-2"></div>
-      	<div class="col-xs-2"></div>
-      	<div class="col-xs-2"></div>
-      	<div class="col-xs-2"><img class="img-circle" src="images/Insta_32x32.jpg" alt=""></div>        
-        <div class="col-xs-2"><img class="img-circle" src="images/facebook.png" alt=""></div>
-    </div></div>
- <div class="col-lg-4 col-md-6 col-sm-6">
-  <h2>Contact Us</h2>
-  <address>
-  <strong>Blue Truck Bakery</strong><br>
-info@thebluetruckbakery.com
-  </address>
-  <div class="row"></div>
-</div>
-  </div>
-</div>
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5aa6019c2609e62b"></script>
+<!--  ################ Smaller Images(2 Columns) ###################### -->
+
+	<table width="100%" border="0" cellspacing="5" cellpadding="5">
+  <tbody>
+    <tr>
+      <td><img src="images/A-600x300.png" alt=""/></td>
+      <td><img src="images/B-600x300.png" alt=""/></td>
+    </tr>
+	    <tr>
+      <td><img src="images/C-600x300.png" alt=""/></td>
+      <td><img src="images/D-600x300.png" alt=""/></td>
+    </tr>
+  </tbody>
+</table>
+<!--################## Get Social & Find Out More Table #######################
+############################################################################-->
+	<table class = "a">
+  <tbody>
+    <tr>
+      <td><h4>Get Social</h4></td>
+      <td><h4>Find out More</h4></td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://www.instagram.com/bluetruckbakery/"><img src="images/Insta_32x32.jpg" width="32" height="32" alt=""/></a>
+	      <a href="https://www.facebook.com/bluetruckbakery/"><img src="images/facebook.png" width="32" height="32" alt=""/></a>
+		  </td>
+      <td>
+        <a href="mailto:info@thebluetruckbakery.com?subject=Feedback">info@thebluetruckbakery.com</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 </body>
 </html>
